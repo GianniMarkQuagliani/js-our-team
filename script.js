@@ -43,6 +43,7 @@ console.log(users)
 
 // Utilizzo un ciclo (for of) per iterare attraverso ciascun oggetto nell'array users.
 for(let user of users){
+    // Creo una stringa card che rappresenta l'HTML per la card dell'utente corrente. Questa stringa include l'immagine, il nome, il ruolo.
     let card = `
     <div class="col-4 py-3">
         <div class="card text-center border-light" style="width: 18rem;">
@@ -53,6 +54,7 @@ for(let user of users){
                 </div>
             </div>
     </div>`
-    console.log(user)
-
+    console.log(user);
+    // La stringa card viene aggiunta al contenuto HTML dell'elemento con classe "row" tramite row.innerHTML += card, in modo da visualizzare la card nell'interfaccia utente.
+    row.innerHTML += card;
 }
