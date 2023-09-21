@@ -40,3 +40,5 @@ const users = [
 
 ];
 console.log(users)
+
+for(let user of users){}
