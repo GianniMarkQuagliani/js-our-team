@@ -57,4 +57,4 @@ for(let user of users){
     console.log(user);
     // La stringa card viene aggiunta al contenuto HTML dell'elemento con classe "row" tramite row.innerHTML += card, in modo da visualizzare la card nell'interfaccia utente.
     row.innerHTML += card;
-}
+};
