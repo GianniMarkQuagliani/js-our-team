@@ -41,4 +41,18 @@ const users = [
 ];
 console.log(users)
 
-for(let user of users){}
+// Utilizzo un ciclo (for of) per iterare attraverso ciascun oggetto nell'array users.
+for(let user of users){
+    let card = `
+    <div class="col-4 py-3">
+        <div class="card text-center border-light" style="width: 18rem;">
+            <img src="${user.foto}" class="card-img-top" alt="${user.foto}">
+                <div class="card-body">
+                    <h3 class="card-text">${user.nome}</h3>
+                    <p class="card-text">${user.ruolo}</p>
+                </div>
+            </div>
+    </div>`
+    console.log(user)
+
+}
